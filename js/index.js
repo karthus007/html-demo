@@ -5,6 +5,7 @@
 /**
  * 页面初始化完成之后加载
  */
+
 $(function () {
 
     $("#show-list").click(function () {
@@ -18,7 +19,7 @@ $(function () {
     $("#show-model").click(function () {
         $(".mask").show()
         $(".model").css("display", "block");
-        $("#name").val("陆冰雪")
+        $("#name").val("王总")
         $("#age").val("18")
     })
 
