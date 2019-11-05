@@ -18,13 +18,11 @@ $(function () {
 
     $("#show-model").click(function () {
         $(".mask").show()
-        $(".model").css("display", "block");
         $("#name").val("王总")
         $("#age").val("18")
-    })
+        $(".model").removeClass("bounceOutDown").addClass("bounceInDown")
+        $(".model").css("display", "block");
 
-    $("#hide-model").click(function () {
-        $(".model").css("display", "none");
     })
 
 })
@@ -33,6 +31,10 @@ $(function () {
  * 页面引入顺序加载
  */
 function hide_model() {
-    $(".mask").hide()
-    $(".model").hide()
+    $(".model").removeClass("bounceInDown").addClass("bounceOutDown")
+    setTimeout(function () {
+        $(".model").hide();
+        $(".mask").hide();
+    }, 600);
+
 }

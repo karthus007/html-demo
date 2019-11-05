@@ -18,7 +18,6 @@
             <span id="show-list">显示列表</span>
             <span id="hide-list">隐藏列表</span>
             <span id="show-model">显示弹窗</span>
-            <span id="hide-model">隐藏弹窗</span>
         </div>
         <div class="list">
             <div class="info">你好啊,世界</div>
@@ -34,10 +33,14 @@
             <div class="info">你好啊,世界</div>
         </div>
     </div>
-    <div class="model">
-        <span>我的名称:</span><input type="text" id="name" />
-        <span>我的年龄:</span><input type="text" id="age" />
-        <button onclick="hide_model()">隐藏蒙层</button>
+    <div class="model animated">
+        <div class="model-item">
+            <span>我的名称:</span><input type="text" id="name" />
+        </div>
+        <div class="model-item">
+            <span>我的年龄:</span><input type="text" id="age" />
+        </div>
+        <span onclick="hide_model()" class="hide-model">X</span>
     </div>
     <div class="mask"></div>
 </body>
